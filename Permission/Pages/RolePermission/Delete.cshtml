@@ -1,0 +1,82 @@
+﻿@page
+@model Permission.Pages.RolePermission.DeleteModel
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>PixiuRolePermission</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuRolePermission.CreatedAt)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuRolePermission.CreatedAt)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuRolePermission.UpdatedAt)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuRolePermission.UpdatedAt)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuRolePermission.Extra01)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuRolePermission.Extra01)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuRolePermission.Extra02)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuRolePermission.Extra02)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuRolePermission.Extra03)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuRolePermission.Extra03)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuRolePermission.Extra04)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuRolePermission.Extra04)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuRolePermission.IsDeleted)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuRolePermission.IsDeleted)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuRolePermission.DeletedAt)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuRolePermission.DeletedAt)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuRolePermission.RoleCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuRolePermission.RoleCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuRolePermission.PermissionCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuRolePermission.PermissionCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuRolePermission.GroupCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuRolePermission.GroupCode)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="PixiuRolePermission.Id" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

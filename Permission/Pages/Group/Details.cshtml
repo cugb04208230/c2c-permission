@@ -1,0 +1,73 @@
+﻿@page
+@model Permission.Pages.Group.DetailsModel
+
+<div>
+    <h4>PixiuGroup</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuGroup.CreatedAt)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuGroup.CreatedAt)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuGroup.UpdatedAt)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuGroup.UpdatedAt)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuGroup.Extra01)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuGroup.Extra01)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuGroup.Extra02)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuGroup.Extra02)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuGroup.Extra03)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuGroup.Extra03)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuGroup.Extra04)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuGroup.Extra04)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuGroup.IsDeleted)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuGroup.IsDeleted)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuGroup.DeletedAt)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuGroup.DeletedAt)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuGroup.GroupCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuGroup.GroupCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuGroup.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuGroup.Description)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.PixiuGroup.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

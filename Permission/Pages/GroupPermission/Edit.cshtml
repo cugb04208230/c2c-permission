@@ -1,0 +1,74 @@
+﻿@page
+@model Permission.Pages.GroupPermission.EditModel
+
+<h4>PixiuGroupPermission</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="PixiuGroupPermission.Id" />
+            <div class="form-group">
+                <label asp-for="PixiuGroupPermission.CreatedAt" class="control-label"></label>
+                <input asp-for="PixiuGroupPermission.CreatedAt" class="form-control" />
+                <span asp-validation-for="PixiuGroupPermission.CreatedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuGroupPermission.UpdatedAt" class="control-label"></label>
+                <input asp-for="PixiuGroupPermission.UpdatedAt" class="form-control" />
+                <span asp-validation-for="PixiuGroupPermission.UpdatedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuGroupPermission.Extra01" class="control-label"></label>
+                <input asp-for="PixiuGroupPermission.Extra01" class="form-control" />
+                <span asp-validation-for="PixiuGroupPermission.Extra01" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuGroupPermission.Extra02" class="control-label"></label>
+                <input asp-for="PixiuGroupPermission.Extra02" class="form-control" />
+                <span asp-validation-for="PixiuGroupPermission.Extra02" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuGroupPermission.Extra03" class="control-label"></label>
+                <input asp-for="PixiuGroupPermission.Extra03" class="form-control" />
+                <span asp-validation-for="PixiuGroupPermission.Extra03" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuGroupPermission.Extra04" class="control-label"></label>
+                <input asp-for="PixiuGroupPermission.Extra04" class="form-control" />
+                <span asp-validation-for="PixiuGroupPermission.Extra04" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuGroupPermission.IsDeleted" class="control-label"></label>
+                <input asp-for="PixiuGroupPermission.IsDeleted" class="form-control" />
+                <span asp-validation-for="PixiuGroupPermission.IsDeleted" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuGroupPermission.DeletedAt" class="control-label"></label>
+                <input asp-for="PixiuGroupPermission.DeletedAt" class="form-control" />
+                <span asp-validation-for="PixiuGroupPermission.DeletedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuGroupPermission.GroupCode" class="control-label"></label>
+                <input asp-for="PixiuGroupPermission.GroupCode" class="form-control" />
+                <span asp-validation-for="PixiuGroupPermission.GroupCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuGroupPermission.PermissionCode" class="control-label"></label>
+                <input asp-for="PixiuGroupPermission.PermissionCode" class="form-control" />
+                <span asp-validation-for="PixiuGroupPermission.PermissionCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

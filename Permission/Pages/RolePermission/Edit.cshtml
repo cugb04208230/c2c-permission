@@ -1,0 +1,79 @@
+﻿@page
+@model Permission.Pages.RolePermission.EditModel
+
+<h4>PixiuRolePermission</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="PixiuRolePermission.Id" />
+            <div class="form-group">
+                <label asp-for="PixiuRolePermission.CreatedAt" class="control-label"></label>
+                <input asp-for="PixiuRolePermission.CreatedAt" class="form-control" />
+                <span asp-validation-for="PixiuRolePermission.CreatedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuRolePermission.UpdatedAt" class="control-label"></label>
+                <input asp-for="PixiuRolePermission.UpdatedAt" class="form-control" />
+                <span asp-validation-for="PixiuRolePermission.UpdatedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuRolePermission.Extra01" class="control-label"></label>
+                <input asp-for="PixiuRolePermission.Extra01" class="form-control" />
+                <span asp-validation-for="PixiuRolePermission.Extra01" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuRolePermission.Extra02" class="control-label"></label>
+                <input asp-for="PixiuRolePermission.Extra02" class="form-control" />
+                <span asp-validation-for="PixiuRolePermission.Extra02" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuRolePermission.Extra03" class="control-label"></label>
+                <input asp-for="PixiuRolePermission.Extra03" class="form-control" />
+                <span asp-validation-for="PixiuRolePermission.Extra03" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuRolePermission.Extra04" class="control-label"></label>
+                <input asp-for="PixiuRolePermission.Extra04" class="form-control" />
+                <span asp-validation-for="PixiuRolePermission.Extra04" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuRolePermission.IsDeleted" class="control-label"></label>
+                <input asp-for="PixiuRolePermission.IsDeleted" class="form-control" />
+                <span asp-validation-for="PixiuRolePermission.IsDeleted" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuRolePermission.DeletedAt" class="control-label"></label>
+                <input asp-for="PixiuRolePermission.DeletedAt" class="form-control" />
+                <span asp-validation-for="PixiuRolePermission.DeletedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuRolePermission.RoleCode" class="control-label"></label>
+                <input asp-for="PixiuRolePermission.RoleCode" class="form-control" />
+                <span asp-validation-for="PixiuRolePermission.RoleCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuRolePermission.PermissionCode" class="control-label"></label>
+                <input asp-for="PixiuRolePermission.PermissionCode" class="form-control" />
+                <span asp-validation-for="PixiuRolePermission.PermissionCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuRolePermission.GroupCode" class="control-label"></label>
+                <input asp-for="PixiuRolePermission.GroupCode" class="form-control" />
+                <span asp-validation-for="PixiuRolePermission.GroupCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

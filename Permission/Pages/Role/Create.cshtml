@@ -1,0 +1,78 @@
+﻿@page
+@model Permission.Pages.Role.CreateModel
+
+<h4>PixiuRole</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="PixiuRole.CreatedAt" class="control-label"></label>
+                <input asp-for="PixiuRole.CreatedAt" class="form-control" />
+                <span asp-validation-for="PixiuRole.CreatedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuRole.UpdatedAt" class="control-label"></label>
+                <input asp-for="PixiuRole.UpdatedAt" class="form-control" />
+                <span asp-validation-for="PixiuRole.UpdatedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuRole.Extra01" class="control-label"></label>
+                <input asp-for="PixiuRole.Extra01" class="form-control" />
+                <span asp-validation-for="PixiuRole.Extra01" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuRole.Extra02" class="control-label"></label>
+                <input asp-for="PixiuRole.Extra02" class="form-control" />
+                <span asp-validation-for="PixiuRole.Extra02" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuRole.Extra03" class="control-label"></label>
+                <input asp-for="PixiuRole.Extra03" class="form-control" />
+                <span asp-validation-for="PixiuRole.Extra03" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuRole.Extra04" class="control-label"></label>
+                <input asp-for="PixiuRole.Extra04" class="form-control" />
+                <span asp-validation-for="PixiuRole.Extra04" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuRole.IsDeleted" class="control-label"></label>
+                <input asp-for="PixiuRole.IsDeleted" class="form-control" />
+                <span asp-validation-for="PixiuRole.IsDeleted" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuRole.DeletedAt" class="control-label"></label>
+                <input asp-for="PixiuRole.DeletedAt" class="form-control" />
+                <span asp-validation-for="PixiuRole.DeletedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuRole.GroupCode" class="control-label"></label>
+                <input asp-for="PixiuRole.GroupCode" class="form-control" />
+                <span asp-validation-for="PixiuRole.GroupCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuRole.RoleCode" class="control-label"></label>
+                <input asp-for="PixiuRole.RoleCode" class="form-control" />
+                <span asp-validation-for="PixiuRole.RoleCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuRole.Description" class="control-label"></label>
+                <input asp-for="PixiuRole.Description" class="form-control" />
+                <span asp-validation-for="PixiuRole.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

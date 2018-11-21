@@ -1,0 +1,94 @@
+﻿@page
+@model Permission.Pages.Permissions.EditModel
+
+<h4>PixiuPermission</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="PixiuPermission.Id" />
+            <div class="form-group">
+                <label asp-for="PixiuPermission.CreatedAt" class="control-label"></label>
+                <input asp-for="PixiuPermission.CreatedAt" class="form-control" />
+                <span asp-validation-for="PixiuPermission.CreatedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuPermission.UpdatedAt" class="control-label"></label>
+                <input asp-for="PixiuPermission.UpdatedAt" class="form-control" />
+                <span asp-validation-for="PixiuPermission.UpdatedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuPermission.Extra01" class="control-label"></label>
+                <input asp-for="PixiuPermission.Extra01" class="form-control" />
+                <span asp-validation-for="PixiuPermission.Extra01" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuPermission.Extra02" class="control-label"></label>
+                <input asp-for="PixiuPermission.Extra02" class="form-control" />
+                <span asp-validation-for="PixiuPermission.Extra02" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuPermission.Extra03" class="control-label"></label>
+                <input asp-for="PixiuPermission.Extra03" class="form-control" />
+                <span asp-validation-for="PixiuPermission.Extra03" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuPermission.Extra04" class="control-label"></label>
+                <input asp-for="PixiuPermission.Extra04" class="form-control" />
+                <span asp-validation-for="PixiuPermission.Extra04" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuPermission.IsDeleted" class="control-label"></label>
+                <input asp-for="PixiuPermission.IsDeleted" class="form-control" />
+                <span asp-validation-for="PixiuPermission.IsDeleted" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuPermission.DeletedAt" class="control-label"></label>
+                <input asp-for="PixiuPermission.DeletedAt" class="form-control" />
+                <span asp-validation-for="PixiuPermission.DeletedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuPermission.PermissionCode" class="control-label"></label>
+                <input asp-for="PixiuPermission.PermissionCode" class="form-control" />
+                <span asp-validation-for="PixiuPermission.PermissionCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuPermission.RoutePath" class="control-label"></label>
+                <input asp-for="PixiuPermission.RoutePath" class="form-control" />
+                <span asp-validation-for="PixiuPermission.RoutePath" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuPermission.Description" class="control-label"></label>
+                <input asp-for="PixiuPermission.Description" class="form-control" />
+                <span asp-validation-for="PixiuPermission.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuPermission.HttpMethod" class="control-label"></label>
+                <input asp-for="PixiuPermission.HttpMethod" class="form-control" />
+                <span asp-validation-for="PixiuPermission.HttpMethod" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuPermission.ParentPermissionCode" class="control-label"></label>
+                <input asp-for="PixiuPermission.ParentPermissionCode" class="form-control" />
+                <span asp-validation-for="PixiuPermission.ParentPermissionCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PixiuPermission.IsAllowAny" class="control-label"></label>
+                <input asp-for="PixiuPermission.IsAllowAny" class="form-control" />
+                <span asp-validation-for="PixiuPermission.IsAllowAny" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

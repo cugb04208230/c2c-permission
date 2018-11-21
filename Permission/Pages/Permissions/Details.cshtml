@@ -1,0 +1,97 @@
+﻿@page
+@model Permission.Pages.Permissions.DetailsModel
+
+<div>
+    <h4>PixiuPermission</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuPermission.CreatedAt)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuPermission.CreatedAt)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuPermission.UpdatedAt)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuPermission.UpdatedAt)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuPermission.Extra01)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuPermission.Extra01)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuPermission.Extra02)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuPermission.Extra02)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuPermission.Extra03)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuPermission.Extra03)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuPermission.Extra04)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuPermission.Extra04)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuPermission.IsDeleted)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuPermission.IsDeleted)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuPermission.DeletedAt)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuPermission.DeletedAt)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuPermission.PermissionCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuPermission.PermissionCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuPermission.RoutePath)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuPermission.RoutePath)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuPermission.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuPermission.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuPermission.HttpMethod)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuPermission.HttpMethod)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuPermission.ParentPermissionCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuPermission.ParentPermissionCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PixiuPermission.IsAllowAny)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PixiuPermission.IsAllowAny)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.PixiuPermission.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
